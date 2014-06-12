@@ -6,7 +6,9 @@
 //
 
 #import "NSImage+QuickLook.h"
-#import <QuickLook/QuickLook.h> // Remember to import the QuickLook framework into your project!
+#import "MF_Base64Additions.h"
+
+@import QuickLook; // Make sure modules are enabled, andyou can remove all reerences to liking o frameworks!
 
 @implementation NSImage (QuickLook)
 
@@ -51,6 +53,16 @@
     }
     
     return nil;
+}
+
+- (NSString*)base64ImageData { return self.PNGRepresentation.base64String; }
+
+- (NSData *)PNGRepresentation {
+    // Create a bitmap representation from the current image
+    [self lockFocus];
+    NSBitmapImageRep *bitmapRep = [NSBitmapImageRep.alloc initWithFocusedViewRect:(NSRect){0, 0,self.size}];
+    [self unlockFocus];
+    return [bitmapRep representationUsingType:NSPNGFileType properties:Nil];
 }
 
 

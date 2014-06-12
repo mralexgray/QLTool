@@ -1,19 +1,16 @@
-//
-//  AppDelegate.h
-//  QLTool
-//
-//  Created by Tristan Hume on 2014-05-25.
-//  Copyright (c) 2014 Tristan Hume. All rights reserved.
-//
 
-#import <Cocoa/Cocoa.h>
+//  AppDelegate.h  QLTool Created by Tristan Hume on 2014-05-25.  Copyright (c) 2014 Tristan Hume. All rights reserved.
+
+
+@import AppKit;
 #import "QLPreviewCont.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
-    QLPreviewCont *quickLookCont;
-    NSString *previewFile;
+@interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    QLPreviewCont * quickLookCont;
+         NSString * previewFile;
 }
 
-- (void)keyDown:(NSEvent*)event;
+- (void) keyDown:(NSEvent*)e;
 
 @end

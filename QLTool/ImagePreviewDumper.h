@@ -6,12 +6,14 @@
 //  Copyright (c) 2014 Tristan Hume. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+
+#define QLPANEL QLPreviewPanel.sharedPreviewPanel
 
 @interface ImagePreviewDumper : NSObject
 
-+ (NSString*)dataPreviewFor:(NSString*)path ofSize:(NSSize)size asIcon:(BOOL)icon;
-+ (NSString*)terminalPreviewFor:(NSString*)path ofSize:(NSSize)size asIcon:(BOOL)icon;
-+ (NSString *)resolvePath:(NSString *)path;
++ (NSString*)     dataPreviewFor:(NSString*)p ofSize:(NSSize)z asIcon:(BOOL)i;
++ (NSString*) terminalPreviewFor:(NSString*)p ofSize:(NSSize)z asIcon:(BOOL)i;
++ (NSString*)        resolvePath:(NSString*)p;
 
 @end

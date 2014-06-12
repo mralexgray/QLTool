@@ -9,7 +9,7 @@
 //  Public Domain
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSString (Base64Addition)
 +(NSString *)stringFromBase64String:(NSString *)base64String;
