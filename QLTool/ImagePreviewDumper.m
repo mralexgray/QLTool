@@ -4,7 +4,6 @@
 #import "ImagePreviewDumper.h"
 #import "NSImage+QuickLook.h"
 #import "MF_Base64Additions.h"
-#import "stdlib.h"
 
 @implementation ImagePreviewDumper
 

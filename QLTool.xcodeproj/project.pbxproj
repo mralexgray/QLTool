@@ -50,13 +50,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6AD8E700193221E500A17ADF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6AD8E721193221E500A17ADF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,7 +126,6 @@
 			buildConfigurationList = 6AD8E734193221E500A17ADF /* Build configuration list for PBXNativeTarget "QLTool" */;
 			buildPhases = (
 				6AD8E6FF193221E500A17ADF /* Sources */,
-				6AD8E700193221E500A17ADF /* Frameworks */,
 				6AD8E701193221E500A17ADF /* Resources */,
 			);
 			buildRules = (

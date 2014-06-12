@@ -1,8 +1,7 @@
 
 // QLPreviewCont.h QLTool  Created by Tristan Hume on 2014-05-25.  Copyright (c) 2014 Tristan Hume. All rights reserved.
 
-@import QuickLook;
-@import Quartz;
+@import QuickLook; @import AppKit; @import Quartz;
 
 @interface QLPreviewCont : NSResponder <QLPreviewPanelDataSource, QLPreviewPanelDelegate>
 
